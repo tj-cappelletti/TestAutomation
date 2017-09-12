@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="TestAutomation.Wpf.Calculator.Demo.Controls.NumericPadControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#0a2756" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Margin" Value="6" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="LineStackingStrategy" Value="MaxHeight" />
+            <Setter Property="Padding" Value="0" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Click="NumberButton_Click" Grid.Row="0" Grid.Column="0" Name="OneButton" Tag="1" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="1" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="0" Grid.Column="1" Name="TwoButton" Tag="2" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="2" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="0" Grid.Column="2" Name="ThreeButton" Tag="3" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="3" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="1" Grid.Column="0" Name="FourButton" Tag="4" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="4" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="1" Grid.Column="1" Name="FiveButton" Tag="5" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="5" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="1" Grid.Column="2" Name="SixButton" Tag="6" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="6" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="2" Grid.Column="0" Name="SevenButton" Tag="7" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="7" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="2" Grid.Column="1" Name="EightButton" Tag="8" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="8" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="2" Grid.Column="2" Name="NineButton" Tag="9" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="9" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="3" Grid.Column="0" Name="ZeroButton" Tag="0" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="0" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="3" Grid.Column="1" Name="ZeroZeroButton" Tag="00" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="00" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="NumberButton_Click" Grid.Row="3" Grid.Column="2" Name="DecimalButton" Tag="." x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="&#x2022;" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="TestAutomation.Wpf.Calculator.Demo.Controls.MathOperationsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="DimGray" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Margin" Value="6" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="LineStackingStrategy" Value="MaxHeight" />
+            <Setter Property="Padding" Value="0" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Click="EvaluateButton_Click" Grid.Row="0" Grid.Column="0" Name="PercentButton" Tag="Percent" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="%" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="EvaluateButton_Click" Grid.Row="0" Grid.Column="1" Name="PlusMinusButton" Tag="PlusMinus" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="&#x00B1;" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="OperationButton_Click" Grid.Row="1" Grid.Column="0" Name="TimesButton" Tag="*" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="X" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="OperationButton_Click" Grid.Row="1" Grid.Column="1" Name="DivideButton" Tag="/" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="&#x00F7;" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="OperationButton_Click" Grid.Row="2" Grid.RowSpan="2" Grid.Column="0" Name="AddButton" Tag="+" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="+" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="OperationButton_Click" Grid.Row="2" Grid.Column="1" Name="MinusButton" Tag="-" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="-" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Click="EvaluateButton_Click" Grid.Row="3" Grid.Column="1" Name="EqualsButton" Tag="Equals" x:FieldModifier="private">
+            <Button.Content>
+                <Viewbox>
+                    <TextBlock Text="=" />
+                </Viewbox>
+            </Button.Content>
+        </Button>
+    </Grid>
+</UserControl>
