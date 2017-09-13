@@ -5,6 +5,13 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomation.Wpf.Calculator.Demo", "TestAutomation.Wpf.Calculator.Demo\TestAutomation.Wpf.Calculator.Demo.csproj", "{93CF919C-D35D-4774-9646-29AEC1146F7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomation.Wpf.Calculator.AutomatedTests", "TestAutomation.Wpf.Calculator.AutomatedTests\TestAutomation.Wpf.Calculator.AutomatedTests.csproj", "{1672EE49-DF4B-4044-A074-C02499209829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{FBAAD1A0-C4FF-4D30-AF23-642CADC13AFA}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{93CF919C-D35D-4774-9646-29AEC1146F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93CF919C-D35D-4774-9646-29AEC1146F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93CF919C-D35D-4774-9646-29AEC1146F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1672EE49-DF4B-4044-A074-C02499209829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1672EE49-DF4B-4044-A074-C02499209829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1672EE49-DF4B-4044-A074-C02499209829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1672EE49-DF4B-4044-A074-C02499209829}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
