@@ -20,7 +20,7 @@ namespace TestAutomation.Wpf.Calculator.AutomatedTests
         }
 
         [TestMethod]
-        [TestCategory("Automated")]
+        [TestCategory("Appium")]
         [TestCategory("Addition")]
         [DataTestMethod]
         [DataRow("2", "2", "4")]
