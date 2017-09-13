@@ -25,6 +25,7 @@ namespace TestAutomation.Wpf.Calculator.AutomatedTests
             var desiredCapabilities = new DesiredCapabilities();
             desiredCapabilities.SetCapability("app", demoAppFullPath);
             WindowsDriver = new WindowsDriver<WindowsElement>(new Uri(WindowsApplicationDriverUrl), desiredCapabilities);
+
             Assert.IsNotNull(WindowsDriver);
             Assert.IsNotNull(WindowsDriver.SessionId);
 
