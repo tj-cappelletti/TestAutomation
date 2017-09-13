@@ -15,6 +15,6 @@ The project `TestAutomation.Wpf.Calculator.AutomatedTests` uses Appium to automa
 5. Run tests with the test category of `Appium`
 
 Additional reading:
-[Appium](http://appium.io/)
-[Microsoft's WinAppDriver](https://github.com/Microsoft/WinAppDriver)
-[WinAppDriver - Test any app with Appium's Selenium-like tests on Windows](https://www.hanselman.com/blog/WinAppDriverTestAnyAppWithAppiumsSeleniumlikeTestsOnWindows.aspx)
+Appium - <http://appium.io/>
+Microsoft's WinAppDriver - <https://github.com/Microsoft/WinAppDriver>
+WinAppDriver - Test any app with Appium's Selenium-like tests on Windows - <https://www.hanselman.com/blog/WinAppDriverTestAnyAppWithAppiumsSeleniumlikeTestsOnWindows.aspx>
