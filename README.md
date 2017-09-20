@@ -9,10 +9,12 @@ The project `TestAutomation.Wpf.Calculator.AutomatedTests` uses Appium to automa
 
 1. Download the latest version of the [WinAppDriver](https://github.com/Microsoft/WinAppDriver/releases/latest) from Microsoft's GitHub repository. At present, the demo works with version `v1.0-RC`
 2. Install the MSI or compile the code for the `WinAppDriver` (recommended to install the MSI)
-3. Launch the `WinAppDriver` as an Administrator
+3. Turn on `Developer mode` in Windows.
+   a. For details on this, please read [Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) in the Windows Dev Center
+4. Launch the `WinAppDriver` as an Administrator
    a. If installed via MSI, launch a command prompt as an Administrator, navigate to `C:\Program Files (x86)\Windows Application Driver` and type `WinAppDriver` and hit enter
-4. Launch Visual Studio as an Administrator and open the `TestAutomation` solution
-5. Run tests with the test category of `Appium`
+5. Launch Visual Studio as an Administrator and open the `TestAutomation` solution
+6. Run tests with the test category of `Appium`
 
 # Additional Reading
 * Appium - <http://appium.io/>
